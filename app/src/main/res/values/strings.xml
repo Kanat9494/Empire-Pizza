@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Империя Пиццы</string>
+    <string name="splash_screen_text">Империя Пиццы</string>
+    <string name="user_name">Ишенбай кызы Айкерим</string>
+    <string name="user_orders">Мои заказы</string>
+    <string name="user_points">Мои счета</string>
+    <string name="menu">Меню</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="main_text">Самые</string>
+    <string name="sub_main_text">вкусные пиццы</string>
+    <string name="guest_card">Карта постоянного гостя</string>
+    <string name="qr_code_text">Предъявить карту и получить баллы</string>
+    <string name="text_news">Новости и акции</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

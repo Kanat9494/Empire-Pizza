@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:background="#161617">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/circle_image_view"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/profile_image"
+        app:civ_border_width="1dp"
+        app:civ_border_color="#F4EFEF"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_view_orders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@+id/circle_image_view"
+        android:fontFamily="@font/brawler"
+        android:text="@string/user_name"
+        android:textColor="#fff"
+        android:textSize="14sp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="55dp"
+        android:src="@drawable/icon_forward_white_24"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:id="@+id/go_to_profile_image_view"
+        android:focusable="true"
+        android:clickable="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@+id/circle_image_view"
+        android:layout_marginTop="20dp"
+        android:id="@+id/relative_layout_main_card">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/relative_layout_orders"
+            android:layout_marginStart="10dp"
+            android:layout_alignParentStart="true">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:id="@+id/image_view_order"
+                android:src="@drawable/icon_order_24"
+                android:layout_centerHorizontal="true"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_view_order"
+                android:text="@string/user_orders"
+                android:textAlignment="center"
+                android:textSize="10sp"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/relative_layout_points"
+            android:layout_centerHorizontal="true">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:id="@+id/image_view_point"
+                android:src="@drawable/icon_balance_24"
+                android:layout_centerHorizontal="true"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_view_point"
+                android:text="@string/user_points"
+                android:textAlignment="center"
+                android:textSize="10sp"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/relative_layout_menu"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:id="@+id/image_view_share"
+                android:src="@drawable/icon_menu_24"
+                android:layout_centerHorizontal="true"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_below="@+id/image_view_share"
+                android:text="@string/menu"
+                android:textAlignment="center"
+                android:textSize="10sp"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
