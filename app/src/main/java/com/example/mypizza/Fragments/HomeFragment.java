@@ -9,6 +9,9 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.mypizza.R;
+import com.example.mypizza.RecyclerViewItem;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -16,6 +19,8 @@ import com.example.mypizza.R;
  * create an instance of this fragment.
  */
 public class HomeFragment extends Fragment {
+
+    private ArrayList<RecyclerViewItem> recyclerViewItems;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -30,14 +35,7 @@ public class HomeFragment extends Fragment {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment HomeFragment.
-     */
+
     // TODO: Rename and change types and number of parameters
     public static HomeFragment newInstance(String param1, String param2) {
         HomeFragment fragment = new HomeFragment();
@@ -51,10 +49,29 @@ public class HomeFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
+
+        recyclerViewItems = new ArrayList<>();
+        recyclerViewItems.add(new RecyclerViewItem(R.drawable.news_image, "Важная новость",
+                "Уважаемые гости! Уведомляе"));
+        recyclerViewItems.add(new RecyclerViewItem(R.drawable.delivery_image, "Доставим вовремя " +
+                "или подарим заказ", "Мы придерживаемся золотых правил"));
+        recyclerViewItems.add(new RecyclerViewItem(R.drawable.payment_image, "Оплати заказ " +
+                "через мобильный кошелек", "Рады сообщить, что теперь доставку"));
+        recyclerViewItems.add(new RecyclerViewItem(R.drawable.bonus, "АКЦИЯ СЧАСТЛИВЫЙ " +
+                "ИМЕНИНИК",
+                "АКЦИЯ СЧАСТЛИВЫЙ ИМЕНИНИК. Империя Пиццы"));
+        recyclerViewItems.add(new RecyclerViewItem(R.drawable.children_birthday, "АКЦИЯ " +
+                "ДЕСТКИЙ ДЕНЬ РОЖДЕНИЯ", "АКЦИЯ ДЕТСКИЙ ДЕНЬ РОЖДЕНИЯ. Если у Вашего"));
+        recyclerViewItems.add(new RecyclerViewItem(R.drawable.coca_cola, "Получи бутылку Coca" +
+                "-Cola", "Закажи две любых пиццы и получи бутылку"));
+        recyclerViewItems.add(new RecyclerViewItem(R.drawable.invite_friend, "Пригласи друга",
+                "Пригласи друга и получи 10 баллов после"));
+        recyclerViewItems.add(new RecyclerViewItem(R.drawable.news_image, "Важная новость",
+                "Уважаемые гости! Уведомляе"));
+        recyclerViewItems.add(new RecyclerViewItem(R.drawable.news_image, "Важная новость",
+                "Уважаемые гости! Уведомляе"));
+        recyclerViewItems.add(new RecyclerViewItem(R.drawable.news_image, "Важная новость",
+                "Уважаемые гости! Уведомляе"));
     }
 
     @Override
