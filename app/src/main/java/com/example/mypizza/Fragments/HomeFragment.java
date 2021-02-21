@@ -57,7 +57,7 @@ public class HomeFragment extends Fragment {
                 "или подарим заказ", "Мы придерживаемся золотых правил"));
         recyclerViewItems.add(new RecyclerViewItem(R.drawable.payment_image, "Оплати заказ " +
                 "через мобильный кошелек", "Рады сообщить, что теперь доставку"));
-        recyclerViewItems.add(new RecyclerViewItem(R.drawable.bonus, "АКЦИЯ СЧАСТЛИВЫЙ " +
+        recyclerViewItems.add(new RecyclerViewItem(R.drawable.birthday, "АКЦИЯ СЧАСТЛИВЫЙ " +
                 "ИМЕНИНИК",
                 "АКЦИЯ СЧАСТЛИВЫЙ ИМЕНИНИК. Империя Пиццы"));
         recyclerViewItems.add(new RecyclerViewItem(R.drawable.children_birthday, "АКЦИЯ " +
@@ -66,8 +66,8 @@ public class HomeFragment extends Fragment {
                 "-Cola", "Закажи две любых пиццы и получи бутылку"));
         recyclerViewItems.add(new RecyclerViewItem(R.drawable.invite_friend, "Пригласи друга",
                 "Пригласи друга и получи 10 баллов после"));
-        recyclerViewItems.add(new RecyclerViewItem(R.drawable.news_image, "Важная новость",
-                "Уважаемые гости! Уведомляе"));
+        recyclerViewItems.add(new RecyclerViewItem(R.drawable.bonus, "Баллы за регистрацию",
+                "При регистрации в приложении Империя пиццы Бишкек"));
         recyclerViewItems.add(new RecyclerViewItem(R.drawable.news_image, "Важная новость",
                 "Уважаемые гости! Уведомляе"));
         recyclerViewItems.add(new RecyclerViewItem(R.drawable.news_image, "Важная новость",
