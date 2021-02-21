@@ -12,10 +12,7 @@ import android.view.ViewGroup;
 
 import com.example.mypizza.R;
 
-import com.example.mypizza.model.Model;
-
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -25,8 +22,8 @@ import java.util.List;
 public class CallbackFragment extends Fragment {
 
     View v;
-    RecyclerView recyclerView;
-    List<Model> mList;
+
+
 
 
     // TODO: Rename parameter arguments, choose names that match
@@ -63,13 +60,6 @@ public class CallbackFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mList = new ArrayList<>();
-        mList.add(new Model(R.drawable.news_image, "Title"));
-        mList.add(new Model(R.drawable.news_image, "Title"));
-        mList.add(new Model(R.drawable.news_image, "Title"));
-        mList.add(new Model(R.drawable.news_image, "Title"));
-        mList.add(new Model(R.drawable.news_image, "Title"));
-        mList.add(new Model(R.drawable.news_image, "Title"));
     }
 
     @Override
@@ -77,7 +67,6 @@ public class CallbackFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         v = inflater.inflate(R.layout.fragment_callback, container, false);
-        recyclerView=v.findViewById(R.id.rv);
 
         return v;
 

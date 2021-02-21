@@ -26,7 +26,6 @@ import com.example.mypizza.Fragments.ContactsFragment;
 import com.example.mypizza.Fragments.CouponFragment;
 import com.example.mypizza.Fragments.GuestCardFragment;
 import com.example.mypizza.Fragments.HomeFragment;
-import com.example.mypizza.model.AllCategory;
 import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
@@ -37,7 +36,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class MainActivity extends AppCompatActivity implements
         NavigationView.OnNavigationItemSelectedListener{
 
-    RecyclerView mainCategoryRecycler;
+
 
 
     Toolbar toolbar;

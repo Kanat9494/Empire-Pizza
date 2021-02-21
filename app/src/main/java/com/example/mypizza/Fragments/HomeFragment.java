@@ -3,6 +3,7 @@ package com.example.mypizza.Fragments;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
@@ -10,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.mypizza.R;
+import com.example.mypizza.RecyclerViewAdapter;
 import com.example.mypizza.RecyclerViewItem;
 
 import java.util.ArrayList;
@@ -25,6 +27,7 @@ public class HomeFragment extends Fragment {
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager layoutManager;
+    LinearLayoutManager HorizontalLayout;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -81,7 +84,21 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        View view = inflater.inflate(R.layout.fragment_home, container, false);
+
+        recyclerView = view.findViewById(R.id.recycler_view);
+        recyclerView.setHasFixedSize(true);
+        adapter = new RecyclerViewAdapter(recyclerViewItems);
+        layoutManager = new LinearLayoutManager(getContext());
+
+        recyclerView.setLayoutManager(layoutManager);
+        HorizontalLayout = new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL,
+                false);
+
+        recyclerView.setAdapter(adapter);
+        recyclerView.setLayoutManager(HorizontalLayout);
+
+
+        return view;
     }
 }
