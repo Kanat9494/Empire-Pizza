@@ -15,13 +15,13 @@
             android:layout_width="0dp"
             android:layout_height="120dp"
             android:layout_marginStart="64dp"
-            android:layout_marginTop="84dp"
+            android:layout_marginTop="70dp"
             android:layout_marginEnd="64dp"
             android:src="@drawable/logo"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/guest_card_text_view"
@@ -95,6 +95,7 @@
             </com.google.android.material.card.MaterialCardView>
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_news"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/qr_code_card_view"
@@ -134,6 +135,13 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/materialTextView" />
             </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/cl_news"
+                android:id="@+id/recycler_view"
+                android:scrollbars="horizontal"/>
 
         </RelativeLayout>
 
