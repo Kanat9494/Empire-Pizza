@@ -11,7 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.mypizza.R;
-import com.example.mypizza.adapter.MainRecyclerAdapter;
+
 import com.example.mypizza.model.Model;
 
 import java.util.ArrayList;
@@ -27,7 +27,7 @@ public class CallbackFragment extends Fragment {
     View v;
     RecyclerView recyclerView;
     List<Model> mList;
-    MainRecyclerAdapter mainRecyclerAdapter;
+
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -78,9 +78,7 @@ public class CallbackFragment extends Fragment {
         // Inflate the layout for this fragment
         v = inflater.inflate(R.layout.fragment_callback, container, false);
         recyclerView=v.findViewById(R.id.rv);
-        mainRecyclerAdapter = new MainRecyclerAdapter(mList, getContext());
-        recyclerView.setAdapter(mainRecyclerAdapter);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+
         return v;
 
     }

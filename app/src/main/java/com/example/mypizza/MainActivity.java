@@ -26,7 +26,6 @@ import com.example.mypizza.Fragments.ContactsFragment;
 import com.example.mypizza.Fragments.CouponFragment;
 import com.example.mypizza.Fragments.GuestCardFragment;
 import com.example.mypizza.Fragments.HomeFragment;
-import com.example.mypizza.adapter.MainRecyclerAdapter;
 import com.example.mypizza.model.AllCategory;
 import com.google.android.material.navigation.NavigationView;
 
@@ -39,7 +38,7 @@ public class MainActivity extends AppCompatActivity implements
         NavigationView.OnNavigationItemSelectedListener{
 
     RecyclerView mainCategoryRecycler;
-    MainRecyclerAdapter mainRecyclerAdapter;
+
 
     Toolbar toolbar;
     DrawerLayout drawerLayout;
@@ -156,13 +155,5 @@ public class MainActivity extends AppCompatActivity implements
     public void showSettings() {
         Intent intentSettings = new Intent(MainActivity.this, SettingsActivity.class);
         startActivity(intentSettings);
-    }
-
-    private void setMainCategoryRecycler(List<AllCategory> allCategoryList) {
-        mainCategoryRecycler = findViewById(R.id.main_recycler);
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
-        mainCategoryRecycler.setLayoutManager(layoutManager);
-        mainRecyclerAdapter = new MainRecyclerAdapter(this, allCategoryList);
-        mainCategoryRecycler.setAdapter(mainRecyclerAdapter);
     }
 }
