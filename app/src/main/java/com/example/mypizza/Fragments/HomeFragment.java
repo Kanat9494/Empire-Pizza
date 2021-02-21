@@ -68,10 +68,10 @@ public class HomeFragment extends Fragment {
                 "Пригласи друга и получи 10 баллов после"));
         recyclerViewItems.add(new RecyclerViewItem(R.drawable.bonus, "Баллы за регистрацию",
                 "При регистрации в приложении Империя пиццы Бишкек"));
-        recyclerViewItems.add(new RecyclerViewItem(R.drawable.news_image, "Важная новость",
-                "Уважаемые гости! Уведомляе"));
-        recyclerViewItems.add(new RecyclerViewItem(R.drawable.news_image, "Важная новость",
-                "Уважаемые гости! Уведомляе"));
+        recyclerViewItems.add(new RecyclerViewItem(R.drawable.discount, "Получи скидку 5%",
+                "Забери свой заказ сам и получи скидку"));
+        recyclerViewItems.add(new RecyclerViewItem(R.drawable.thanks, "БОНУСНАЯ ПРОГРАММА " +
+                "БЛАГОДАРНОСТЬ", "Участники программы Любимый Гость - все, кто скачал"));
     }
 
     @Override
