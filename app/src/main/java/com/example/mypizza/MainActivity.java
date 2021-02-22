@@ -35,10 +35,6 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class MainActivity extends AppCompatActivity implements
         NavigationView.OnNavigationItemSelectedListener{
-
-
-
-
     Toolbar toolbar;
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle drawerToggle;
@@ -47,6 +43,8 @@ public class MainActivity extends AppCompatActivity implements
     View headerView;
     ImageView goToProfileImageView;
     RelativeLayout relative_layout_orders;
+
+    RelativeLayout rlMenu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -83,6 +81,15 @@ public class MainActivity extends AppCompatActivity implements
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
                 startActivity(intent);
+            }
+        });
+
+        rlMenu = headerView.findViewById(R.id.rl_menu);
+        rlMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentMenu = new Intent(MainActivity.this, MenuActivity.class);
+                startActivity(intentMenu);
             }
         });
 
